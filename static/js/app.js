@@ -9,7 +9,7 @@ function appendTable(data) {
     data.forEach((selection) => {
         // Append table row `tr` for each UFO Sighting object
         var tableRow = d3.select('tbody').append('tr');
-        // Use values to find each UFO Sighting value
+        // Use .values to find each UFO Sighting value
         Object.values(selection).forEach((value) => {
             var tableData = tableRow.append('td');
             tableData.text(value);
@@ -17,3 +17,8 @@ function appendTable(data) {
     })
 }
 
+appendTable(tableData);
+
+function clickInput() {
+    // Stop the page auto refresh
+    d3.event.preventDefault();
