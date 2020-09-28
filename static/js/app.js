@@ -24,3 +24,8 @@ function clickInput() {
     d3.event.preventDefault();
     // Select the input date
     var date = d3.select('#datetime').property('value');
+    // Filter Data with datetime equal to input value
+    var filteredData = tableData;
+    if (date) {
+        filteredData = filteredData.filter((row) => row.datetime === date);
+    }
