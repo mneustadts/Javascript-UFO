@@ -29,3 +29,7 @@ function clickInput() {
     if (date) {
         filteredData = filteredData.filter((row) => row.datetime === date);
     }
+    appendTable(filteredData);
+}
+// Call functions
+d3.selectAll('#filter-btn').on('click', clickInput);
