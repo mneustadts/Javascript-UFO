@@ -22,3 +22,5 @@ appendTable(tableData);
 function clickInput() {
     // Stop the page auto refresh
     d3.event.preventDefault();
+    // Select the input date
+    var date = d3.select('#datetime').property('value');
