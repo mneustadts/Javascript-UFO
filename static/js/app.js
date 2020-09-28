@@ -1,5 +1,5 @@
   
-var tableData = data;
+const tableData = data;
 console.log(tableData);
 
 // Refer to the table body
