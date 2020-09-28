@@ -7,3 +7,8 @@ function appendTable(data) {
     data.forEach((selection) => {
         var tableRow = d3.select('tbody').append('tr');
         Object.values(selection).forEach((value) => {
+            var tableData = tableRow.append('td');
+            tableData.text(value);
+        });
+    })
+}
