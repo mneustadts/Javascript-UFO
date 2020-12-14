@@ -8,3 +8,4 @@ I started by creating a simple webpage with HTML and styled it with CSS. Adding 
 
 Then I started on my app.js file that would iterate over the array of objects in the data.js file. I wrote code that would append a table to the webpage and add new rows for each UFO sighting for the given date and time that was input by the user. I used a date form in my HTML document and wrote javascript code that would listen for events and search through the specific 'date/time' column to find the rows that match the user input.
 
+Finally, What I ended up with was a beautiful web page that demonstrates how javascript, HTML, and CSS can come together and showcase data as well as streamline accessability of a dataset.
