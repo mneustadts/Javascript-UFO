@@ -1,37 +1,10 @@
-# JavaScript Homework - JavaScript and DOM Manipulation
+# Using Javascript on UFO Data
 
-## Background
+## Summary
 
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
+In this project I am tasked with using javascript to sort through a dataset that consists of a vast amount of UFO sights taken over a period of time. My javascript code will communicate with a webpage in order to take in a date that a user inputs and output the specific UFO sight data from that particular Date and Time.
 
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
+I started by creating a simple webpage with HTML and styled it with CSS. Adding any animations and input fields that my javascript would eventually end up using to sort through the dataset.
 
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
+Then I started on my app.js file that would iterate over the array of objects in the data.js file. I wrote code that would append a table to the webpage and add new rows for each UFO sighting for the given date and time that was input by the user. I used a date form in my HTML document and wrote javascript code that would listen for events and search through the specific 'date/time' column to find the rows that match the user input.
 
-You can handle this... right? The planet Earth needs to know what we have found!
-
-## Your Task
-
-### Before You Begin
-
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
-
-1. Clone the new repository to your computer.
-
-1. Add your **html** files to this folder and also create a `static` folder that will contain your javascript. 
-
-1. Push the above changes to GitHub or GitLab.
-
-1. Ensure your repository has regular commits (e.g., 20+ commits) and a thorough README.md file
-
-### Level 1: Automatic Table and Date Search (Required)
-
-* Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
-
-* Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
-
-  * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
-
-* Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
-
-Trilogy Education Services © 2019. All Rights Reserved.
